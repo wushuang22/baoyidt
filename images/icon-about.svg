@@ -1,0 +1,27 @@
+<svg width="30" height="30" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>shape4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1538 0)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M 1538 0L 1568 0L 1568 30L 1538 30L 1538 0Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="shape4" clip-path="url(#clip-0)">
+<g id="shape4">
+<g id="Vector 3">
+<use xlink:href="#path0_stroke" transform="translate(1542 8.5)" fill="#999999"/>
+</g>
+<g id="Ellipse 6">
+<use xlink:href="#path1_fill" transform="translate(1552 0)" fill="#333333"/>
+</g>
+<g id="Ellipse 6">
+<use xlink:href="#path2_fill" transform="translate(1538 22)" fill="#333333"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 17.1464 -0.353553L -0.353553 17.1464L 0.353553 17.8536L 17.8536 0.353553L 17.1464 -0.353553Z"/>
+<path id="path1_fill" d="M 16 8C 16 12.4183 12.4183 16 8 16C 3.58172 16 0 12.4183 0 8C 0 3.58172 3.58172 0 8 0C 12.4183 0 16 3.58172 16 8Z"/>
+<path id="path2_fill" d="M 8 4C 8 6.20914 6.20914 8 4 8C 1.79086 8 0 6.20914 0 4C 0 1.79086 1.79086 0 4 0C 6.20914 0 8 1.79086 8 4Z"/>
+</defs>
+</svg>

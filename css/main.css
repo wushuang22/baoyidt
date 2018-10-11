@@ -1,0 +1,692 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/*Font*/
+/*@font-face {
+    font-family: 'Baoyi Type';
+    src: url('font/LiSong-Pro.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: fallback;
+}*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: baseline;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    font-family: 'LiSong Pro Light', 'Myriad Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    font-size: 62.5%;
+    background-color: #f5f5f5;
+}
+body{
+    height: 100%;
+}
+
+h2{
+    font-family: LiSong Pro Light;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 300;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 300;
+}
+
+p{
+    font-weight: 300;
+    font-size: 2rem;
+}
+.line{
+    border: 0.05rem solid #ccc;
+}
+del{
+    font-weight: 300;
+}
+
+/*左侧导航栏*/
+.nav-containers{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 16rem;
+    height: 100%;
+    background-color: #000;
+    -webkit-transition: -webkit-transform 0.2s 0.05s ease-in, opacity 0.2s 0.05s linear;
+    -webkit-transition: opacity 0.2s 0.05s linear, -webkit-transform 0.2s 0.05s ease-in;
+    transition: opacity 0.2s 0.05s linear, -webkit-transform 0.2s 0.05s ease-in;
+    transition: transform 0.2s 0.05s ease-in, opacity 0.2s 0.05s linear;
+    transition: transform 0.2s 0.05s ease-in, opacity 0.2s 0.05s linear, -webkit-transform 0.2s 0.05s ease-in;
+}
+.logo{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 16rem;
+    text-align: center;
+}
+.logo img{
+    width: 12rem;
+    height: 12rem;
+    margin-top: 3rem;
+}
+.nav_menu{
+    margin-top: 8rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+.nav_underline{
+    width: 3rem;
+    height: 0.4rem;
+    margin: 0.8rem auto;
+    background-color: #FF3341;
+    display: none;
+}
+.menu_item{
+    margin: 6rem 4rem;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    padding: 0;
+    width: 8rem; 
+    height: 2rem;
+}
+.menu_link{
+    font-family: LiSong Pro Light;
+    line-height: 100%;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+
+/*内容区*/
+.home-page{
+    padding-left: 16rem;
+}
+.containers{
+    margin: auto;
+    width: 120rem;
+}
+.overview{
+    background-color: #222;
+    height: 108rem;
+}
+.overview .text{
+    margin-top: 12rem;
+    margin-left: 6rem;
+    float: left;
+}
+.animation{
+    margin: 8rem 20rem 0 0;
+    content: "point";
+    color: transparent;
+    background: url('../images/ov-animatiom.gif') no-repeat left top;
+    width: 29.6rem;
+    height: 33.4rem;
+    display: block;
+    overflow: hidden;
+    float: right;
+}
+.slagon{
+    font-family: LiSong Pro Light;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: 4rem;
+    color: #fff; 
+    margin-top: 4rem;
+}
+.overview a{
+    font-family: LiSong-Pro Light;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.overview .underline{
+    width: 3rem;
+    height: 0.4rem;
+    margin: 0.8rem 0;
+    position: absolute;
+    background-color: #E6A545;
+}
+.overview .link{
+    margin-top: 5.6rem;
+    height: 2.8rem;
+}
+.business{
+    display: inline-block;
+    margin: 12rem 6rem 0 6rem;
+}
+.business li{
+    float: left;
+    width: 34.9rem;
+    height: 48rem;
+    border: 0.1rem solid #666;
+}
+.business li:nth-child(2){
+    margin: 0 1.6rem;
+}
+.business .item-text{
+    font-family: LiSong-Pro Light;
+    font-size: 2.4rem;
+    color: #fff;
+    margin: 4rem;
+}
+/*添加图片*/
+.business li:first-child .img{
+    margin-top: 4rem;
+    content: "point";
+    color: transparent;
+    background: url('../images/business-shape1.svg') no-repeat left top;
+    width: 29.6rem;
+    height: 33.4rem;
+    display: block;
+    overflow: hidden;
+    float: right;
+} 
+.business li:nth-child(2) .img{
+    margin-top: 4rem;
+    content: "point";
+    color: transparent;
+    background: url('../images/business-shape2.svg') no-repeat left top;
+    width: 30rem;
+    height: 33.4rem;
+    display: block;
+    overflow: hidden;
+    float: right;
+} 
+.business li:nth-child(3) .img{
+    margin-top: 4rem;
+    content: "point";
+    color: transparent;
+    background: url('../images/business-shape3.svg') no-repeat left top;
+    width: 30rem;
+    height: 33.4rem;
+    display: block;
+    overflow: hidden;
+    float: right;
+} 
+
+.about{
+    height: 85.6rem;
+    background-color: #fff;
+    float: left;
+}
+.hp-tittle{
+    font-family: LiSong-Pro Light;
+    font-size: 2.4rem;
+    margin: 4rem 6rem;
+    width: 108rem;
+}
+.about .hp-tittle:before{
+    content: "point";
+    color: transparent;
+    background: url('../images/icon-about.svg') no-repeat left top;
+    top: 0rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    padding-right: 3.2rem;
+}
+.value{
+    margin: 8rem auto;
+    width: 109rem;
+}
+.value li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.value .text{
+    width: 20.6rem;
+    height: 18.6rem;
+}
+.value .text h2{
+    margin-bottom: 2.4rem;
+    float: left;
+    color: #FF3341;
+}
+.value .text p{
+    width: 100%;
+    height: 12rem;
+    margin: auto;
+    line-height: 2.2;
+}
+.value .line{
+    height: 18.6rem;
+    margin-right: 3rem;
+    margin-left: 5rem;
+}
+.about .img{
+    content: "square";
+    background: transparent url('../images/about-img.svg') no-repeat left center;
+    top: 0rem;
+    width: 56rem;
+    height: 47.2rem;
+    display: inline-block;
+    position: relative;
+    top: -3.3rem;
+}
+.about p{
+    float: right;
+    height: 36rem;
+    width: 48rem;
+    line-height: 2;
+    margin-right: 6rem;
+}
+.jobs{
+    height: 100%;
+    background-color: #f7f7f7;
+    display: block;
+    float: left;
+    margin-bottom: 4rem;
+}
+.jobs .hp-tittle:before{
+    content: "point";
+    color: transparent;
+    background: url('../images/icon-jobs.svg') no-repeat left top;
+    top: 0rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    padding-right: 3.2rem;
+}
+.hp-subtittle{
+    margin: 2.4rem 12.2rem;
+    height: 2rem;
+}
+.jobs .line{
+    margin: 4rem auto;
+    width: 95.6rem;
+}
+.jobs-detials{
+    margin-left: 12.2rem;
+    width: 95.6rem;
+}
+.jobs .item-text{
+    margin: 4rem 0;
+}
+h2 i{
+    content: '';
+    display: inline-block;
+    width: 0.4rem;
+    height: 3rem;
+    background-color: #FF3341;
+    margin: auto 3.2rem auto 0;
+}
+.jobs-detials p{
+    line-height: 2;
+    margin: 2.4rem 0;
+    color: #333;
+}
+.jobs-detials ul{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-left: 2.4rem;
+}
+.jobs-detials li{
+    color: #333;
+    line-height: 2;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.jobs-detials a{
+    color: #FF3341;
+}
+.btn_toggle{
+    cursor:pointer;
+}
+
+/*底部 */
+.footer{
+    background-color: #fff;
+    height: 20rem;
+    width: 100%;
+    float: left;
+    padding-left: 16rem;
+}
+.inner-footer{
+    width: 97rem;
+    height: 6.5rem;
+    margin: 4rem auto;
+}
+.inner-footer li{
+    font-family: LiSong-Pro Light;
+    font-size: 1.8rem;
+    display: inline-block;
+    color: #666;
+    margin-right: 4rem; 
+    text-align: right;
+}
+.inner-footer p{
+    margin: 1rem 0;
+}
+.inner-footer a{
+    color: #666;
+    margin: 1rem 0;
+}
+.slash{
+    content: "123";
+    background-image: url('../images/icon-slash.svg');
+    width: 2.3rem;
+    height: 5.1rem;
+    color: silver;
+}
+.info-ccf{
+    font-family: LiSong-Pro Light;
+    font-size: 1.4rem;
+    color: #666;
+    text-align: center;
+}
+.info-ccf a{
+    color: #666;
+}
+
+/*
+ * Rremove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: rem;
+    border: 0;
+    border-top: rem solid #ccc;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+/*
+ * Rremove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Rremove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2rem 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2rem 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacrement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -999rem;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: rem;
+    margin: -rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: rem;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the elrement to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elrements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elrements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35rem) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: rem solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

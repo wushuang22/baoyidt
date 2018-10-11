@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="560px" height="472px" viewBox="0 0 560 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-200.000000, -1464.000000)" stroke="#CCCCCC">
+            <g id="Oval-+-Triangle-Mask" transform="translate(200.000000, 1080.000000)">
+                <g id="Group-5" transform="translate(-314.000000, 383.000000)">
+                    <ellipse id="Oval" cx="437" cy="443.652742" rx="436.5" ry="442.204961"></ellipse>
+                    <path d="M458.5,140.887481 L219.965293,478.609661 L697.034707,478.609661 L458.5,140.887481 Z" id="Triangle"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
